@@ -1,7 +1,13 @@
-import React from "react";
+import React from 'react';
+import {RecoilRoot} from 'recoil';
+import CurrentUserInfo from './components/CurrentUserInfo';
 
 const App = () => {
-  return <div className="text-lg">test</div>;
+    return (
+        <RecoilRoot>
+            <CurrentUserInfo />
+        </RecoilRoot>
+    );
 };
 
 export default App;
